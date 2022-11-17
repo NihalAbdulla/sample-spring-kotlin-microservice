@@ -21,7 +21,7 @@ class PersonControllerTests {
         person = template.postForObject("/persons", person, Person::class.java)
         Assertions.assertNotNull(person)
         Assertions.assertNotNull(person.id)
-        Assertions.assertEquals(4, person.id)
+        Assertions.assertEquals(1001, person.id)
     }
 
     @Test
